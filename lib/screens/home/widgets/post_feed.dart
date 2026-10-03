@@ -7,10 +7,34 @@ class PostFeed extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+    final List<String> names = [
+      'Rahul',
+      'Priya',
+      'Aman',
+      'Anjali',
+      'Rohit',
+      'Neha',
+      'Arjun',
+      'Sneha',
+      'Karan',
+      'Pooja',
+      'Vikas',
+      'Riya',
+      'Aditya',
+      'Simran',
+      'Varun',
+      'Kavya',
+      'Mohit',
+      'Nisha',
+      'Akash',
+      'Meera',
+    ];
     return ListView.builder(
-      itemCount: 20,
+      itemCount: names.length,
       itemBuilder: (BuildContext context, int index) {
-        return const PostCard();
+        return PostCard(
+          name: names[index],
+        );
       },
     );
   }
