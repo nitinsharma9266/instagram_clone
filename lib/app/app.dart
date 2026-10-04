@@ -11,7 +11,7 @@ class InstagramCloneApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Instagram Clone',
       theme: AppTheme.lightTheme,
-      initialRoute: AppRoutes.home,
+      initialRoute: AppRoutes.welcome,
       routes: AppRoutes.routes,
     );
   }
