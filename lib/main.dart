@@ -1,6 +1,23 @@
+
 import 'package:flutter/material.dart';
-import 'app/app.dart';
+import 'Animated_widget/animation_screen.dart';
 
 void main() {
-  runApp(const InstagramCloneApp());
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        scaffoldBackgroundColor: const Color(0xFFF4F5FA),
+      ),
+      home: const AnimationScreen(),
+    );
+  }
 }
