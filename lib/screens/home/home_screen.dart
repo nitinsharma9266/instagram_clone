@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../widgets/bottom_nav_bar.dart';
 import 'widgets/home_header.dart';
 import 'widgets/story_list.dart';
 import 'widgets/post_feed.dart';
@@ -8,7 +9,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return const Scaffold(
+      bottomNavigationBar: BottomNavBar(),
         body: SafeArea(
           child: Column(
             children: [
