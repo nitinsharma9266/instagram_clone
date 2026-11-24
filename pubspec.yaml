@@ -38,6 +38,8 @@ dependencies:
   firebase_auth: ^7.0.1
   google_sign_in: ^7.2.0
   font_awesome_flutter: ^11.0.0
+  http: ^1.6.0
+  video_player: ^2.14.1
 
 dev_dependencies:
   flutter_test:
